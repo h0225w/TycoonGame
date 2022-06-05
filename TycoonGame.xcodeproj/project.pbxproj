@@ -99,12 +99,11 @@
 		B7DAA7FB284CF55F001DBDE5 /* TycoonGame */ = {
 			isa = PBXGroup;
 			children = (
-				B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */,
-				B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */,
-				B7DAA800284CF55F001DBDE5 /* ViewController.swift */,
-				B7DAA802284CF55F001DBDE5 /* Main.storyboard */,
+				B7DAA82C284CF710001DBDE5 /* App */,
+				B7DAA82F284CF73D001DBDE5 /* Models */,
+				B7DAA82E284CF71B001DBDE5 /* ViewControllers */,
+				B7DAA82D284CF714001DBDE5 /* Storyboards */,
 				B7DAA805284CF560001DBDE5 /* Assets.xcassets */,
-				B7DAA807284CF560001DBDE5 /* LaunchScreen.storyboard */,
 				B7DAA80A284CF560001DBDE5 /* Info.plist */,
 			);
 			path = TycoonGame;
@@ -125,6 +124,39 @@
 				B7DAA81F284CF560001DBDE5 /* TycoonGameUITestsLaunchTests.swift */,
 			);
 			path = TycoonGameUITests;
+			sourceTree = "<group>";
+		};
+		B7DAA82C284CF710001DBDE5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */,
+				B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7DAA82D284CF714001DBDE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA802284CF55F001DBDE5 /* Main.storyboard */,
+				B7DAA807284CF560001DBDE5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B7DAA82E284CF71B001DBDE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA800284CF55F001DBDE5 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B7DAA82F284CF73D001DBDE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
