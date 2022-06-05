@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7DAA7FD284CF55F001DBDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */; };
+		B7DAA7FF284CF55F001DBDE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */; };
+		B7DAA801284CF55F001DBDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA800284CF55F001DBDE5 /* ViewController.swift */; };
+		B7DAA804284CF55F001DBDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DAA802284CF55F001DBDE5 /* Main.storyboard */; };
+		B7DAA806284CF560001DBDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DAA805284CF560001DBDE5 /* Assets.xcassets */; };
+		B7DAA809284CF560001DBDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DAA807284CF560001DBDE5 /* LaunchScreen.storyboard */; };
+		B7DAA814284CF560001DBDE5 /* TycoonGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA813284CF560001DBDE5 /* TycoonGameTests.swift */; };
+		B7DAA81E284CF560001DBDE5 /* TycoonGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA81D284CF560001DBDE5 /* TycoonGameUITests.swift */; };
+		B7DAA820284CF560001DBDE5 /* TycoonGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA81F284CF560001DBDE5 /* TycoonGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7DAA810284CF560001DBDE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DAA7F1284CF55F001DBDE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7DAA7F8284CF55F001DBDE5;
+			remoteInfo = TycoonGame;
+		};
+		B7DAA81A284CF560001DBDE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DAA7F1284CF55F001DBDE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7DAA7F8284CF55F001DBDE5;
+			remoteInfo = TycoonGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7DAA7F9284CF55F001DBDE5 /* TycoonGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TycoonGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7DAA800284CF55F001DBDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7DAA803284CF55F001DBDE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7DAA805284CF560001DBDE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7DAA808284CF560001DBDE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7DAA80A284CF560001DBDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DAA80F284CF560001DBDE5 /* TycoonGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TycoonGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DAA813284CF560001DBDE5 /* TycoonGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TycoonGameTests.swift; sourceTree = "<group>"; };
+		B7DAA819284CF560001DBDE5 /* TycoonGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TycoonGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DAA81D284CF560001DBDE5 /* TycoonGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TycoonGameUITests.swift; sourceTree = "<group>"; };
+		B7DAA81F284CF560001DBDE5 /* TycoonGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TycoonGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7DAA7F6284CF55F001DBDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DAA80C284CF560001DBDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DAA816284CF560001DBDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7DAA7F0284CF55F001DBDE5 = {
+			isa = PBXGroup;
+			children = (
+				B7DAA7FB284CF55F001DBDE5 /* TycoonGame */,
+				B7DAA812284CF560001DBDE5 /* TycoonGameTests */,
+				B7DAA81C284CF560001DBDE5 /* TycoonGameUITests */,
+				B7DAA7FA284CF55F001DBDE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7DAA7FA284CF55F001DBDE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA7F9284CF55F001DBDE5 /* TycoonGame.app */,
+				B7DAA80F284CF560001DBDE5 /* TycoonGameTests.xctest */,
+				B7DAA819284CF560001DBDE5 /* TycoonGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DAA7FB284CF55F001DBDE5 /* TycoonGame */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */,
+				B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */,
+				B7DAA800284CF55F001DBDE5 /* ViewController.swift */,
+				B7DAA802284CF55F001DBDE5 /* Main.storyboard */,
+				B7DAA805284CF560001DBDE5 /* Assets.xcassets */,
+				B7DAA807284CF560001DBDE5 /* LaunchScreen.storyboard */,
+				B7DAA80A284CF560001DBDE5 /* Info.plist */,
+			);
+			path = TycoonGame;
+			sourceTree = "<group>";
+		};
+		B7DAA812284CF560001DBDE5 /* TycoonGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA813284CF560001DBDE5 /* TycoonGameTests.swift */,
+			);
+			path = TycoonGameTests;
+			sourceTree = "<group>";
+		};
+		B7DAA81C284CF560001DBDE5 /* TycoonGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA81D284CF560001DBDE5 /* TycoonGameUITests.swift */,
+				B7DAA81F284CF560001DBDE5 /* TycoonGameUITestsLaunchTests.swift */,
+			);
+			path = TycoonGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7DAA7F8284CF55F001DBDE5 /* TycoonGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DAA823284CF560001DBDE5 /* Build configuration list for PBXNativeTarget "TycoonGame" */;
+			buildPhases = (
+				B7DAA7F5284CF55F001DBDE5 /* Sources */,
+				B7DAA7F6284CF55F001DBDE5 /* Frameworks */,
+				B7DAA7F7284CF55F001DBDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TycoonGame;
+			productName = TycoonGame;
+			productReference = B7DAA7F9284CF55F001DBDE5 /* TycoonGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7DAA80E284CF560001DBDE5 /* TycoonGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DAA826284CF560001DBDE5 /* Build configuration list for PBXNativeTarget "TycoonGameTests" */;
+			buildPhases = (
+				B7DAA80B284CF560001DBDE5 /* Sources */,
+				B7DAA80C284CF560001DBDE5 /* Frameworks */,
+				B7DAA80D284CF560001DBDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7DAA811284CF560001DBDE5 /* PBXTargetDependency */,
+			);
+			name = TycoonGameTests;
+			productName = TycoonGameTests;
+			productReference = B7DAA80F284CF560001DBDE5 /* TycoonGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7DAA818284CF560001DBDE5 /* TycoonGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DAA829284CF560001DBDE5 /* Build configuration list for PBXNativeTarget "TycoonGameUITests" */;
+			buildPhases = (
+				B7DAA815284CF560001DBDE5 /* Sources */,
+				B7DAA816284CF560001DBDE5 /* Frameworks */,
+				B7DAA817284CF560001DBDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7DAA81B284CF560001DBDE5 /* PBXTargetDependency */,
+			);
+			name = TycoonGameUITests;
+			productName = TycoonGameUITests;
+			productReference = B7DAA819284CF560001DBDE5 /* TycoonGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7DAA7F1284CF55F001DBDE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B7DAA7F8284CF55F001DBDE5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B7DAA80E284CF560001DBDE5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B7DAA7F8284CF55F001DBDE5;
+					};
+					B7DAA818284CF560001DBDE5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B7DAA7F8284CF55F001DBDE5;
+					};
+				};
+			};
+			buildConfigurationList = B7DAA7F4284CF55F001DBDE5 /* Build configuration list for PBXProject "TycoonGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7DAA7F0284CF55F001DBDE5;
+			productRefGroup = B7DAA7FA284CF55F001DBDE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7DAA7F8284CF55F001DBDE5 /* TycoonGame */,
+				B7DAA80E284CF560001DBDE5 /* TycoonGameTests */,
+				B7DAA818284CF560001DBDE5 /* TycoonGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7DAA7F7284CF55F001DBDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DAA809284CF560001DBDE5 /* LaunchScreen.storyboard in Resources */,
+				B7DAA806284CF560001DBDE5 /* Assets.xcassets in Resources */,
+				B7DAA804284CF55F001DBDE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DAA80D284CF560001DBDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DAA817284CF560001DBDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7DAA7F5284CF55F001DBDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DAA801284CF55F001DBDE5 /* ViewController.swift in Sources */,
+				B7DAA7FD284CF55F001DBDE5 /* AppDelegate.swift in Sources */,
+				B7DAA7FF284CF55F001DBDE5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DAA80B284CF560001DBDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DAA814284CF560001DBDE5 /* TycoonGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DAA815284CF560001DBDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DAA820284CF560001DBDE5 /* TycoonGameUITestsLaunchTests.swift in Sources */,
+				B7DAA81E284CF560001DBDE5 /* TycoonGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7DAA811284CF560001DBDE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7DAA7F8284CF55F001DBDE5 /* TycoonGame */;
+			targetProxy = B7DAA810284CF560001DBDE5 /* PBXContainerItemProxy */;
+		};
+		B7DAA81B284CF560001DBDE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7DAA7F8284CF55F001DBDE5 /* TycoonGame */;
+			targetProxy = B7DAA81A284CF560001DBDE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7DAA802284CF55F001DBDE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DAA803284CF55F001DBDE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7DAA807284CF560001DBDE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DAA808284CF560001DBDE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7DAA821284CF560001DBDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7DAA822284CF560001DBDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7DAA824284CF560001DBDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TycoonGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phw.TycoonGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7DAA825284CF560001DBDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TycoonGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phw.TycoonGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7DAA827284CF560001DBDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phw.TycoonGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TycoonGame.app/TycoonGame";
+			};
+			name = Debug;
+		};
+		B7DAA828284CF560001DBDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phw.TycoonGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TycoonGame.app/TycoonGame";
+			};
+			name = Release;
+		};
+		B7DAA82A284CF560001DBDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phw.TycoonGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TycoonGame;
+			};
+			name = Debug;
+		};
+		B7DAA82B284CF560001DBDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phw.TycoonGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TycoonGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7DAA7F4284CF55F001DBDE5 /* Build configuration list for PBXProject "TycoonGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DAA821284CF560001DBDE5 /* Debug */,
+				B7DAA822284CF560001DBDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DAA823284CF560001DBDE5 /* Build configuration list for PBXNativeTarget "TycoonGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DAA824284CF560001DBDE5 /* Debug */,
+				B7DAA825284CF560001DBDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DAA826284CF560001DBDE5 /* Build configuration list for PBXNativeTarget "TycoonGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DAA827284CF560001DBDE5 /* Debug */,
+				B7DAA828284CF560001DBDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DAA829284CF560001DBDE5 /* Build configuration list for PBXNativeTarget "TycoonGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DAA82A284CF560001DBDE5 /* Debug */,
+				B7DAA82B284CF560001DBDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7DAA7F1284CF55F001DBDE5 /* Project object */;
+}
