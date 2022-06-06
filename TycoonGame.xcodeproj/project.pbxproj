@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B706C0F0284E3DDA002D41C1 /* Skewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C0EF284E3DDA002D41C1 /* Skewer.swift */; };
+		B706C0F2284E3E42002D41C1 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C0F1284E3E42002D41C1 /* Guest.swift */; };
+		B706C0F4284E3E66002D41C1 /* Grill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C0F3284E3E66002D41C1 /* Grill.swift */; };
 		B7DAA7FD284CF55F001DBDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */; };
 		B7DAA7FF284CF55F001DBDE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */; };
 		B7DAA801284CF55F001DBDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA800284CF55F001DBDE5 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B706C0EF284E3DDA002D41C1 /* Skewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skewer.swift; sourceTree = "<group>"; };
+		B706C0F1284E3E42002D41C1 /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		B706C0F3284E3E66002D41C1 /* Grill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grill.swift; sourceTree = "<group>"; };
 		B7DAA7F9284CF55F001DBDE5 /* TycoonGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TycoonGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DAA7FC284CF55F001DBDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7DAA7FE284CF55F001DBDE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 		B7DAA82F284CF73D001DBDE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B706C0EF284E3DDA002D41C1 /* Skewer.swift */,
+				B706C0F1284E3E42002D41C1 /* Guest.swift */,
+				B706C0F3284E3E66002D41C1 /* Grill.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,6 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B706C0F4284E3E66002D41C1 /* Grill.swift in Sources */,
+				B706C0F2284E3E42002D41C1 /* Guest.swift in Sources */,
+				B706C0F0284E3DDA002D41C1 /* Skewer.swift in Sources */,
 				B7DAA801284CF55F001DBDE5 /* ViewController.swift in Sources */,
 				B7DAA7FD284CF55F001DBDE5 /* AppDelegate.swift in Sources */,
 				B7DAA7FF284CF55F001DBDE5 /* SceneDelegate.swift in Sources */,
