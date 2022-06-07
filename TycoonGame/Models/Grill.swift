@@ -20,8 +20,32 @@ struct Grill {
 
 // MARK: - Model
 class GrillModel {
-    // C
-    // R
-    // U
-    // D
+    private var storage: [Grill] = []
+    
+    public var count: Int { storage.count }
+    
+    // MARK: - Model > Create
+    public func create(_ data: Grill) {
+        self.storage.append(data)
+    }
+    
+    // MARK: - Model > Read
+    public func read(at: Int) -> Grill? {
+        guard count > at else { return nil }
+        return storage[at]
+    }
+    
+    // MARK: - Model > Update
+    public func update(at: Int, _ data: Grill) -> Bool {
+        guard count > at else { return false }
+        self.storage[at] = data
+        return true
+    }
+    
+    // MARK: - Model > Delete
+    public func delete(at: Int) -> Bool {
+        guard count > at else { return false }
+        self.storage.remove(at: at)
+        return true
+    }
 }

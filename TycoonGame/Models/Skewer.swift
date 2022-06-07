@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: 꼬치 종류 (떡꼬치, 닭꼬치, 양꼬치)
 enum SkewerType {
-    case ricecakechicken, lamb
+    case ricecake, chicken, lamb
 }
 
 // MARK: - Entity
@@ -22,8 +22,35 @@ struct Skewer {
 
 // MARK: - Model
 class SkewerModel {
-    // C
-    // R
-    // U
-    // D
+    private var storage: [Skewer] = []
+    
+    public var count: Int { storage.count }
+    
+    // MARK: - Nodel > Create
+    public func create(_ data: Skewer) {
+        self.storage.append(data)
+    }
+    
+    // MARK: - Model > Read
+    public func read(at: Int) -> Skewer? {
+        guard count > at else { return nil }
+        
+        return storage[at]
+    }
+    
+    // MARK: - Model > Update
+    public func update(at: Int, _ data: Skewer) -> Bool{
+        guard count > at else { return false }
+        self.storage[at] = data
+        
+        return true
+    }
+    
+    // MARK: - Model > Delete
+    public func delete(at: Int) -> Bool {
+        guard count > at else { return false }
+        self.storage.remove(at: at)
+        
+        return true
+    }
 }

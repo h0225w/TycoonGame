@@ -21,9 +21,33 @@ struct Guest {
 
 // MARK: - Model
 class GuestModel {
-    // C
-    // R
-    // U
-    // D
+    private var storage: [Guest] = []
+    
+    public var count: Int { storage.count }
+    
+    // MARK: - Model > Create
+    public func create(_ data: Guest) {
+        self.storage.append(data)
+    }
+    
+    // MARK: - Model > Read
+    public func read(at: Int) -> Guest? {
+        guard count > at else { return nil }
+        return storage[at]
+    }
+    
+    // MARK: - Model > Update
+    public func update(at: Int, _ data: Guest) -> Bool {
+        guard count > at else { return false }
+        self.storage[at] = data
+        return true
+    }
+    
+    // MARK: - Model > Delete
+    public func delete(at: Int) -> Bool {
+        guard count > at else { return false }
+        self.storage.remove(at: at)
+        return true
+    }
 }
 
