@@ -15,7 +15,7 @@ enum Status {
 // MARK: - Entity
 struct Grill {
     let status: Status // 불판 상태
-    let skewer: SkewerType // 불판에서 구워지고 있는 꼬치 종류
+    let skewer: Skewer // 불판에서 구워지고 있는 꼬치 종류
 }
 
 // MARK: - Model
