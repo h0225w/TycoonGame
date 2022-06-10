@@ -8,14 +8,15 @@
 import Foundation
 
 // MARK: 손님 종류 (여유로운 손님, 일반 손님, 급한 손님)
-enum GuestType {
+// CaseIterable: 배열 컬렉션과 같이 순회할 수 있게 해주는 프로토콜. 랜덤으로 손님 종류를 가져오기 위함
+enum GuestType: CaseIterable {
     case relax, normal, impatient
 }
 
 // MARK: - Entity
 struct Guest {
     let type: GuestType // 종류
-    let time: Int // 대기 시간
+    let time: Float // 대기 시간
     let order: [Int] // 주문 (0: 떡꼬치, 1: 닭꼬치, 2: 양꼬치)
 }
 
