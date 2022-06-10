@@ -28,18 +28,18 @@ class ViewController: UIViewController {
     }
     
     // MARK: 불판에 올라간 꼬치 상태 업데이트
-    private func grillStatusUpdate(at: Int, _ data: Grill) -> Bool {
+    private func grillStateUpdate(at: Int, _ data: Grill) -> Bool {
         var isRunning: Bool
         
-        switch data.status {
+        switch data.state {
         case .raw:
             print("😀 \(data.skewer.type) 꼬치가 맛있게 익었어요 !!!")
-            self.grillModel.update(at: at, Grill(status: .roast, skewer: data.skewer))
+            self.grillModel.update(at: at, Grill(state: .roast, skewer: data.skewer))
             isRunning = true
             break
         case .roast:
             print("😥 \(data.skewer.type) 이런 꼬치가 다 타버렸어요 !!!")
-            self.grillModel.update(at: at, Grill(status: .burnt, skewer: data.skewer))
+            self.grillModel.update(at: at, Grill(state: .burnt, skewer: data.skewer))
             isRunning = false
             break
         case .burnt:
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     private func createGrillThread(at: Int) {
         guard let skewer = skewerModel.read(at: at) else { return }
         
-        grillModel.create(Grill(status: .raw, skewer: skewer))
+        grillModel.create(Grill(state: .raw, skewer: skewer))
         
         DispatchQueue.global().async {
             var isRunning = true
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
             Timer.scheduledTimer(withTimeInterval: TimeInterval(skewer.time), repeats: true) { _ in
                 guard let grill = self.grillModel.read(at: at) else { return }
                 
-                isRunning = self.grillStatusUpdate(at: at, grill)
+                isRunning = self.grillStateUpdate(at: at, grill)
             }
             
             while isRunning {
@@ -95,6 +95,29 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: 손님 대기 시간에 대한 스레드 생성
+    private func createGuestWatingThread(at: Int) -> Bool {
+        guard guestModel.count > at else { return false }
+        
+        guard let guest = guestModel.read(at: at) else { return false }
+        
+        print("\(at)번째 손님 대기 시간에 대한 스레드 생성 \(guest.time)")
+        DispatchQueue.global().asyncAfter(deadline: .now() + guest.time) {
+            let data = Guest(type: guest.type, state: .leave, time: guest.time, order: guest.order)
+            
+            if self.guestModel.update(at: at, data) {
+                print("\(at)번째 손님이 떠나버렸어요 ㅜㅜ")
+                self.life -= 1
+                
+                if (self.life == 0) {
+                    print("GAME OVER !!!")
+                }
+            }
+        }
+        
+        return true
+    }
+    
     // MARK: 손님 생성
     private func createGuest() {
         let type = GuestType.allCases.randomElement()! // 손님 종류 랜덤값
@@ -102,7 +125,11 @@ class ViewController: UIViewController {
         let watingTime = setGuestWatingTime(type, order: order) // 대기 시간
         
         print("type: \(type), order: \(order), watingTime: \(watingTime)")
-        guestModel.create(Guest(type: type, time: watingTime, order: order))
+        guestModel.create(Guest(type: type, state: .waiting, time: watingTime, order: order))
+        
+        if !createGuestWatingThread(at: guestModel.count - 1) {
+            print("손님 대기 시간에 대한 스레드 생성 실패")
+        }
     }
     
     // MARK: 손님 주문 내역 설정
@@ -123,9 +150,9 @@ class ViewController: UIViewController {
     }
     
     // MARK: 손님 대기 시간 설정
-    private func setGuestWatingTime(_ type: GuestType, order: [Int]) -> Float {
-        var multiple: Float = 0 // 손님 종류에 따른 대기 시간 설정을 위함
-        var time: Float = 0
+    private func setGuestWatingTime(_ type: GuestType, order: [Int]) -> Double {
+        var multiple: Double = 0 // 손님 종류에 따른 대기 시간 설정을 위함
+        var time: Double = 0
         
         switch type {
         case .relax:
@@ -142,7 +169,7 @@ class ViewController: UIViewController {
         order.enumerated().forEach { i, count in
             guard let skewer = self.skewerModel.read(at: i) else { return }
             
-            time += Float(count * skewer.time)
+            time += Double(count * skewer.time)
         }
         
         return time * multiple

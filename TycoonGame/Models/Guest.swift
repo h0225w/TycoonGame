@@ -13,10 +13,16 @@ enum GuestType: CaseIterable {
     case relax, normal, impatient
 }
 
+// MARK: 손님 상태 (대기중, 떠남)
+enum GuestState {
+    case waiting, leave
+}
+
 // MARK: - Entity
 struct Guest {
     let type: GuestType // 종류
-    let time: Float // 대기 시간
+    let state: GuestState // 상태
+    let time: Double // 대기 시간
     let order: [Int] // 주문 (0: 떡꼬치, 1: 닭꼬치, 2: 양꼬치)
 }
 

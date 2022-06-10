@@ -8,13 +8,13 @@
 import Foundation
 
 // MARK: 불판 상태 (안 익은, 익음, 탐)
-enum Status {
+enum GrillState {
     case raw, roast, burnt
 }
 
 // MARK: - Entity
 struct Grill {
-    let status: Status // 불판 상태
+    let state: GrillState // 불판 상태
     let skewer: Skewer // 불판에서 구워지고 있는 꼬치 종류
 }
 
