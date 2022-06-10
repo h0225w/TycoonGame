@@ -174,5 +174,30 @@ class ViewController: UIViewController {
         
         return time * multiple
     }
+    
+    // MARK: 판매 이벤트 처리
+    private func sell(_ at: Int) -> Bool {
+        guard guestModel.count > at else { return false }
+        
+        guard let guest = guestModel.read(at: at) else { return false }
+        
+        var money = 0
+        
+        let data = Guest(type: guest.type, state: .leave, time: guest.time, order: guest.order)
+        
+        guest.order.enumerated().forEach { i, count in
+            guard let skewer = self.skewerModel.read(at: i) else { return }
+            
+            money += count * skewer.price
+        }
+        
+        if self.guestModel.update(at: at, data) {
+            print("\(money)원의 수익이 발생하였습니다 !!!")
+            print("총 금액 ::: \(self.sales)")
+            self.sales += money
+        }
+        
+        return true
+    }
 }
 
