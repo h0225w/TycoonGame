@@ -185,10 +185,18 @@ class ViewController: UIViewController {
         
         let data = Guest(type: guest.type, state: .leave, time: guest.time, order: guest.order)
         
-        guest.order.enumerated().forEach { i, count in
-            guard let skewer = self.skewerModel.read(at: i) else { return }
+        var i = 0
+        for count in guest.order {
+            guard let skewer = self.skewerModel.read(at: i) else { return false }
             
-            money += count * skewer.price
+            if (skewer.count >= count) {
+                print("\(skewer) 꼬치 개수가 부족합니다.")
+                return false
+            } else {
+                self.skewerModel.update(at: i, Skewer(type: skewer.type, time: skewer.time, price: skewer.price, count: skewer.count - count))
+                money += count * skewer.price
+            }
+            i += 1
         }
         
         if self.guestModel.update(at: at, data) {
