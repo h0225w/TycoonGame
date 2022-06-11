@@ -10,6 +10,17 @@ import Foundation
 // MARK: 꼬치 종류 (떡꼬치, 닭꼬치, 양꼬치)
 enum SkewerType {
     case ricecake, chicken, lamb
+    
+    var title: String {
+        switch self {
+        case .ricecake:
+            return "떡꼬치"
+        case .chicken:
+            return "닭꼬치"
+        case .lamb:
+            return "양꼬치"
+        }
+    }
 }
 
 // MARK: - Entity
@@ -17,7 +28,6 @@ struct Skewer {
     let type: SkewerType // 종류
     let time: Int // 굽는 시간
     let price: Int // 가격
-    let count: Int // 현재 개수
 }
 
 // MARK: - Model

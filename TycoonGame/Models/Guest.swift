@@ -11,11 +11,31 @@ import Foundation
 // CaseIterable: 배열 컬렉션과 같이 순회할 수 있게 해주는 프로토콜. 랜덤으로 손님 종류를 가져오기 위함
 enum GuestType: CaseIterable {
     case relax, normal, impatient
+    
+    var title: String {
+        switch self {
+        case .relax:
+            return "여유로운 손님"
+        case .normal:
+            return "일반 손님"
+        case .impatient:
+            return "급한 손님"
+        }
+    }
 }
 
 // MARK: 손님 상태 (대기중, 떠남)
 enum GuestState {
     case waiting, leave
+    
+    var title: String {
+        switch self {
+        case .waiting:
+            return "대기중"
+        case .leave:
+            return "떠남"
+        }
+    }
 }
 
 // MARK: - Entity
