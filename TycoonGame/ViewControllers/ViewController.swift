@@ -135,7 +135,7 @@ class ViewController: UIViewController {
             let runLoop = RunLoop.current
             
             Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
-                // 일단 최대 3명까지만 해둠
+                // TODO: 일단 최대 3명까지만 해둠 (추 후 수정 필요)
                 if self.guestModel.count >= 3 { isRunning = false }
                 else { self.createGuest() }
             }
