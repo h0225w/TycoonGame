@@ -201,7 +201,7 @@ class ViewController: UIViewController {
         var order: [Int] = []
         
         for _ in 0 ..< skewerModel.count {
-            let count = Int.random(in: 0 ... 1)
+            let count = Int.random(in: 0 ... 1) // 테스트용으로 바꿔둠 원래는 3개까지
             order.append(count)
         }
         
